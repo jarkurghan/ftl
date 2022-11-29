@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
+ a {
+   text-decoration: none;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ /* Login */
+ #login {
+   background-color: #282c34;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 2vmin);
+   color: white;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ #login a {
+   width: 100%;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ #login button {
+   width: 100%;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgress-colorPrimary.css-18lrjg1-MuiCircularProgress-root {
+   width: 100px !important;
+   height: 100px !important;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ /* Navbar */
+
+ .nav_desktop {
+   height: 64px;
+   display: flex;
+   align-items: center;
+ }
+
+ .nav_desktop a {
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 8px;
+   height: 100%;
+   min-width: 64px;
+ }
+
+ .nav_desktop a:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .nav_desktop a.active {
+   background-color: rgba(0, 255, 255, 0.2);
+ }
+
+ /* Home */
+ /* #home { */
+ /* } */
+ #home .h-active {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   min-height: 120px;
+   /* font-size: 25px; */
+ }
+
+ #home .h-info {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ #home .h-info table {
+   width: 80%;
+   border-collapse: collapse;
+   background-color: rgba(173, 216, 230, 0.1);
+   box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+ }
+
+ #home .h-info table * {
+   border: none;
+ }
+
+ #home .h-info table td:nth-child(1) {
+   text-align: right;
+   padding-right: min(15px, 5vw);
+ }
+
+ #home .h-info table td:nth-child(2) {
+   text-align: left;
+   padding-left: min(15px, 5vw);
+ }
+
+ #home .h-info table td {
+   border-bottom: 1px solid #ddd;
+   padding-top: 10px;
+   width: 50%;
+ }
+
+ #home .h-create {
+   margin: min(40px, 10vh) auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ #security {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 99;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.3);
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ #security .block {
+   position: relative;
+   z-index: 100;
+   width: 400px;
+   margin: 10px;
+   padding: 30px 30px 20px 30px;
+   background-color: white;
+   box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+   border-radius: 5px;
+ }
+
+ #security .block>div {
+   width: 100%;
+   margin-top: 10px;
+ }
+
+ #security .block>span {
+   font-size: 20px;
+   font-weight: 600;
+ }
+
+ #security .block>div:nth-child(odd) {
+   margin-top: 30px;
+ }
+
+ #security button {
+   font-size: 11px;
+   padding: 5px 15px;
+   float: right;
+   margin-left: 20px;
+ }
+
+ /* #security button:first-child {
+   margin-right: 30px;
+ }
+
+ #security button:last-child {
+   margin-left: 30px;
+ } */
+
+
+ /* create */
+ #create {
+   background-color: #c5cddf;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 1.5vmin);
+   color: black;
+ }
+
+ .league {
+   background: url("./_helpers/fon.png");
+   height: calc(100vh);
+   position: fixed;
+   z-index: -1;
+   width: 100vw;
+   /* filter: brightness(0.3) opacity(0.5); */
+   /* filter: contrast(0.5) opacity(0.5); */
+   /* filter: opacity(0.5); */
+   /* -webkit-filter: blur(8px); */
+ }

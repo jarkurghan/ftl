@@ -8,7 +8,7 @@ import { useState } from "react";
 import Mundial from "./sxemalar/mundial";
 
 export default function Reglament() {
-  const [age, setAge] = useState("liga");
+  const [ttype, setAge] = useState("liga");
   const handleChange = (event) => {
     setAge(event.target.value);
   };
@@ -27,7 +27,7 @@ export default function Reglament() {
           <Select
             labelId="demo-simple-select-standard-label"
             id="demo-simple-select-standard"
-            value={age}
+            value={ttype}
             onChange={handleChange}
           >
             <MenuItem value="liga">Liga</MenuItem>
@@ -36,7 +36,7 @@ export default function Reglament() {
           </Select>
         </FormControl>
       </div>
-      {age === "mundial" && <Mundial />}
+      {ttype === "mundial" && <Mundial />}
       <Link to="/create/teams/mundial">
         <Button
           variant="contained"

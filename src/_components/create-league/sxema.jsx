@@ -6,6 +6,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
 import Mundial from "./sxemalar/mundial";
+import SxemaKubok from "./sxemalar/kubok";
 
 export default function Reglament() {
   const [ttype, setAge] = useState("liga");
@@ -37,6 +38,7 @@ export default function Reglament() {
         </FormControl>
       </div>
       {ttype === "mundial" && <Mundial />}
+      {ttype === "kubok" && <SxemaKubok />}
       <Link to="/create/teams/mundial">
         <Button
           variant="contained"
